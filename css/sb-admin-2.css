@@ -10191,6 +10191,7 @@ a:focus {
 .topbar .navbar-search input {
   font-size: 0.85rem;
   height: auto;
+  margin: auto 1rem;
 }
 
 .topbar .topbar-divider {

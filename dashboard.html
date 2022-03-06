@@ -11,7 +11,6 @@
 // }
 
 </script>
-
 <head>
 
     <meta charset="utf-8">
@@ -43,7 +42,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" >
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
                     <img src="img/Pict_logo.png" width="50" height="50">
                 </div>
@@ -55,7 +54,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link">
+                <a class="nav-link" href="dashboard.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -78,11 +77,11 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Important Links : </h6>
-                        <a class="collapse-item" href="https://www.ieee.org/">IEEE</a>
-                        <a class="collapse-item"
-                            href="https://link.springer.com/signup-login?previousUrl=https://link.springer.com/">Springer</a>
-                        <a class="collapse-item" href="https://dl.acm.org/action/showLogin?redirectUri=%2F">Packt Publication e-Books</a>
-                        <a class="collapse-item" href="#">Prentice Hall of India e-Books</a>
+                        <a class="collapse-item" href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE</a>
+                        <!--<a class="collapse-item"
+                            href="https://link.springer.com/signup-login?previousUrl=https://link.springer.com/">Springer</a>-->
+                        <a class="collapse-item" href="https://pict.knimbus.com/#/home">Packt Publication</a>
+                        <a class="collapse-item" href="http://pictpune.kopykitab.com/">Prentice Hall of India</a>
                     </div>
                 </div>
             </li>
@@ -97,10 +96,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Important Links : </h6>
-                        <a class="collapse-item" href="#">Sample 1</a>
-                        <a class="collapse-item" href="#">Sample 2</a>
-                        <a class="collapse-item" href="#">Sample 3</a>
-                        <a class="collapse-item" href="#">Sample 4</a>
+                        <a class="collapse-item" href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE</a>
                     </div>
                 </div>
             </li>
@@ -121,22 +117,21 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Links : </h6>
-                        <a class="collapse-item" href="#">FE</a>
-                        <a class="collapse-item" href="#">SE</a>
-                        <a class="collapse-item" href="#">TE</a>
-                        <a class="collapse-item" href="#">BE</a>
+                        <h6 class="collapse-header">Important Links : </h6>
+                        <a class="collapse-item" href="#">PICT Lecture Video</a>
+                        <a class="collapse-item" href="https://nptel.ac.in/">NPTEL Video Library</a>
+                        <a class="collapse-item" href="https://club.ndl.iitkgp.ac.in/club-home">NDLI</a>
                     </div>
                 </div>
             </li>
-            <!-- Divider -->
+            <!-- Divider
             <hr class="sidebar-divider">
-            <!-- Nav Item - Charts -->
+             Nav Item - Charts
             <li class="nav-item">
                 <a class="nav-link" href="#">
                     <i class="fa fa-paper-plane"></i>
                     <span>Others</span></a>
-            </li>
+            </li>-->
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -202,7 +197,10 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>-->
-                                
+                                <a class="dropdown-item" href="tables.html">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -250,6 +248,7 @@
                                                
 
                                                   <!-- Springer Card Example -->
+                                                  <!--
                                                   <div class="col-xl-3 col-md-6 mb-4">
                                                     <a href="#" data-toggle="modal" data-target="#springermodal">
                                                         <div class="card border-left-success shadow h-100 py-2">
@@ -261,18 +260,20 @@
                                                                     </div>
                                                                     </div>
                                                                     <div class="col-auto">
-                                                                        <!--<img src="img/ieee_logo.png" width="80"
-                                                                            height="30">-->
+                                                                        <img src="img/ieee_logo.png" width="80"
+                                                                            height="30">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </a>
                                                 </div>
+                                            -->
 
-                                                <!-- Packt Publication e-Books Card Example -->
-                                            <div class="col-xl-3 col-md-6 mb-4">
-                                                <a href="#" data-toggle="modal" data-target="#PacktPublication">
+                                                <!-- Packt Publication e-Books Card Example 
+                                                data-toggle="modal" data-target="#PacktPublication"-->
+                                            <div class="col-xl-6 col-md-6 mb-4">
+                                                <a href="https://pict.knimbus.com/#/home" >
                                                     <div class="card border-left-primary shadow h-100 py-2">
                                                         <div class="card-body">
                                                             <div class="row no-gutters align-items-center">
@@ -291,9 +292,10 @@
                                                 </a>
                                             </div>
 
-                                              <!-- Prentice Hall of India e-Books Card Example -->
-                                              <div class="col-xl-3 col-md-6 mb-4">
-                                                <a href="#" data-toggle="modal" data-target="#PrenticeHall">
+                                              <!-- Prentice Hall of India e-Books Card Example
+                                               data-toggle="modal" data-target="#PrenticeHall" -->
+                                              <div class="col-xl-6 col-md-6 mb-4">
+                                                <a href="http://pictpune.kopykitab.com/">
                                                     <div class="card border-left-success shadow h-100 py-2">
                                                         <div class="card-body">
                                                             <div class="row no-gutters align-items-center">
@@ -320,9 +322,10 @@
                                             <!--Section 2-->
                                             <div role="tabpanel" class="tab-pane fade" id="Section2">
                                                 
-                                                <!-- IEEE Card Example -->
+                                                <!-- IEEE Card Example 
+                                                data-toggle="modal" data-target="#IEEEmodal"-->
                                                 <div class="col-xl-3 col-md-6 mb-4">
-                                                    <a href="#" data-toggle="modal" data-target="#IEEEmodal">
+                                                    <a href="https://ieeexplore.ieee.org/Xplore/home.jsp">
                                                         <div class="card border-left-primary shadow h-100 py-2">
                                                             <div class="card-body">
                                                                 <div class="row no-gutters align-items-center">
@@ -342,6 +345,7 @@
                                                 </div>
 
                                                   <!-- Springer Card Example -->
+                                                  <!--
                                                   <div class="col-xl-3 col-md-6 mb-4">
                                                     <a href="#" data-toggle="modal" data-target="#springermodal">
                                                         <div class="card border-left-success shadow h-100 py-2">
@@ -353,14 +357,15 @@
                                                                     </div>
                                                                     </div>
                                                                     <div class="col-auto">
-                                                                        <!--<img src="img/ieee_logo.png" width="80"
-                                                                            height="30">-->
+                                                                        <img src="img/ieee_logo.png" width="80"
+                                                                            height="30">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </a>
                                                 </div>
+                                            -->
 
                                                 <!-- Card Example -->
                                                

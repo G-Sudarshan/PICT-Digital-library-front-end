@@ -3,12 +3,45 @@
 <html lang="en">
 <script type="text/javascript" >
 
-// let temp = document.referrer;
-// console.log(temp);
+let user = getCookie("isUserValid");
+  if (user == "true") {
+    //alert("Welcome again " + user);
+    console.log("logged in");
+  } else {
+    console.log("reached to dashboard.html logout function");
+    document.location.href="index.html";
+    }
 
-// if(temp != "http://127.0.0.1:5500/index.html"){
-//     document.location.href="index.html";
-// }
+
+console.log(user);
+
+function logout(){
+    setCookie("isUserValid", false, 1);
+    document.location.href="index.html";
+}
+
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
 
 </script>
 <head>
@@ -410,7 +443,7 @@
                     <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="index.html">Logout</a>
+                        <button class="btn btn-primary" onClick="logout()">Logout</button>
                     </div>
                 </div>
             </div>

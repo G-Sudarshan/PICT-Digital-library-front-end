@@ -1,3 +1,4 @@
 1. Add enter to login hit functionality
-2. Show only website hits
-3. move video lectures to new tab
+2. Show only website hits ✅
+3. move video lectures to new tab ✅
+4. new image ✅
